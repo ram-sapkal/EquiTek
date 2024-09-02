@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/EquiTek/static/css/main.cdbed90d.css",
+    "main.js": "/EquiTek/static/js/main.3381f5b2.js",
+    "static/js/453.2ab03be8.chunk.js": "/EquiTek/static/js/453.2ab03be8.chunk.js",
+    "static/media/sci-fi.png": "/EquiTek/static/media/sci-fi.27f9d1a46bc4f76ba959.png",
+    "static/media/nature.png": "/EquiTek/static/media/nature.be2a5dbf4bb64fbbe811.png",
+    "static/media/gaming.png": "/EquiTek/static/media/gaming.d1d4ad1569805c911673.png",
+    "static/media/driving.png": "/EquiTek/static/media/driving.97dabd16db66e681de49.png",
+    "static/media/jonather-vader-profile.png": "/EquiTek/static/media/jonather-vader-profile.abb1f5e9c0a32dc4be8c.png",
+    "static/media/vr-headset.png": "/EquiTek/static/media/vr-headset.fa867e7140820a6e43ed.png",
+    "static/media/tech-innovations.png": "/EquiTek/static/media/tech-innovations.8303e9f224f88daaaf3f.png",
+    "static/media/immersive-experiences.png": "/EquiTek/static/media/immersive-experiences.ba4c4a8b0190f1de0735.png",
+    "static/media/hero-image.png": "/EquiTek/static/media/hero-image.247f350a2918e547d5de.png",
+    "static/media/vr-game-development.png": "/EquiTek/static/media/vr-game-development.050d2dca05a0a4ae7330.png",
+    "static/media/Vector.png": "/EquiTek/static/media/Vector.1b2fdec4d2b5e03787de.png",
+    "static/media/logo-white-equitek.png": "/EquiTek/static/media/logo-white-equitek.4a9deacda0e1aea1d49a.png",
+    "index.html": "/EquiTek/index.html",
+    "main.cdbed90d.css.map": "/EquiTek/static/css/main.cdbed90d.css.map",
+    "main.3381f5b2.js.map": "/EquiTek/static/js/main.3381f5b2.js.map",
+    "453.2ab03be8.chunk.js.map": "/EquiTek/static/js/453.2ab03be8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdbed90d.css",
+    "static/js/main.3381f5b2.js"
+  ]
+}
