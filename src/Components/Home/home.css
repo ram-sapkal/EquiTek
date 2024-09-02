@@ -1,0 +1,24 @@
+.home {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 1rem 10rem;
+}
+.home .HomeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .HomeContainer .text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  flex: 1;
+}
+.home .HomeContainer .homeImage-div {
+  flex: 1;
+}
+.home .HomeContainer .homeImage-div .homeImage {
+  transform: translateY(5%);
+}/*# sourceMappingURL=home.css.map */
