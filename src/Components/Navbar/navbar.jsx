@@ -17,12 +17,18 @@ export const Navbar = () => {
         setActive('navBar')
     }
 
+    const [selectedNavItem, setSelectedNavItem] = useState(1); 
+
+    const handleNavSelect = (index) => {
+      setSelectedNavItem(index);
+    };
+
   return (
     <section className='navBarSection'>
         <header className='header flex'>
 
             <div className="logoDiv">
-                <a href="#" className='logo flex'>
+                <a href="#" className='logo flex' >
                     <h1><img src={logoColorEquiTek} alt="logo" className='icon'/> EquiTek</h1>
                 </a>
             </div>
@@ -30,17 +36,20 @@ export const Navbar = () => {
             <div className={active}>
                 <ul className='navLists flex'>
                     <li className='navItem'>
-                        <a href="#" className='navLink'>Home</a>
+                        <a href="#" className='navLink'  onClick={() => handleNavSelect(1)} >Home</a>
+                        {selectedNavItem === 1 && <div className="txtUnderline"></div>}
                     </li>
                     <li className='navItem'>
-                        <a href="#" className='navLink'>About us</a>
+                        <a href="#" className='navLink' onClick={() => handleNavSelect(2)} >About us</a>
+                        {selectedNavItem === 2 && <div className="txtUnderline"></div>}
                     </li>
                     <li className='navItem'>
-                        <a href="#" className='navLink'>Products</a>
+                        <a href="#" className='navLink' onClick={() => handleNavSelect(3)} >Products</a>
+                        {selectedNavItem === 3 && <div className="txtUnderline"></div>}
                     </li>
                     <div onClick={removeNavbar} className="closeNavbar">
-                     <IoIosCloseCircle className="icon"/>
-                </div>
+                       <IoIosCloseCircle className="icon"/>
+                    </div>
                 </ul>
             </div>
 
@@ -51,6 +60,6 @@ export const Navbar = () => {
         </header>
     </section>
   )
-}
+};
 
 export default Navbar;

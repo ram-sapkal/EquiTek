@@ -54,11 +54,46 @@
 }
 .footer .footerContent .profileinformation .bottomProfile {
   background: transparent;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
 }
 .footer .footerContent .profileinformation .bottomProfile span {
   margin-right: 5px;
   background: transparent;
+}
+.footer .footerContent .profileinformation .bottomProfile .knowMoreButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  border-radius: 50%;
+  background-image: linear-gradient(0deg, rgb(74, 0, 143) 0%, rgba(217, 217, 217, 0) 100%);
+  border: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 2px 0px 0px rgba(255, 255, 255, 0.5);
+}
+.footer .footerContent .profileinformation .bottomProfile .knowMoreButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(60deg, rgb(197, 196, 196) 0%, rgba(0, 0, 0, 0) 100%);
+  mix-blend-mode: overlay;
+}
+.footer .footerContent .profileinformation .bottomProfile .knowMoreButton:hover {
+  background-color: #5a008f; /* Darker shade on hover */
+  box-shadow: 2px 0px 0px rgba(255, 255, 255, 0.7); /* Stronger shadow on hover */
+}
+.footer .footerContent .profileinformation .bottomProfile .knowMoreButton svg {
+  background: transparent;
+  font-size: 2.5rem;
 }
 .footer .footerContent .mailingList {
   padding: 30px;
@@ -103,14 +138,34 @@
 .footer .footerContent .mailingList .checkBoxDiv .checkBoxLabel .checkBox {
   margin-right: 10px;
 }
-.footer .footerContent .mailingList .icon {
+.footer .footerContent .mailingList .buttonContainer {
   background: transparent;
-  transform: translateX(5px);
-  transform: translateY(10px);
+}
+.footer .footerContent .mailingList .buttonContainer .submitBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #4B33E3;
+  color: white;
+  border-radius: 0.5rem;
+  border: dashed;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer .footerContent .mailingList .buttonContainer .submitBtn svg {
+  margin-left: 0.5rem; /* Space between text and icon */
+  background: transparent;
+  font-size: 1.5rem;
 }
 .footer .footerContent .footerLogoDiv {
   background: transparent;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer .footerContent .footerLogoDiv img {
   background: transparent;
@@ -121,5 +176,41 @@
 @media screen and (max-width: 768px) {
   .footer .footerContent {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerContent .profileinformation {
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    border-bottom: 4px solid white;
+  }
+  .footer .footerContent .profileinformation .profileText {
+    text-align: center;
+  }
+  .footer .footerContent .mailingList {
+    order: 1;
+    border: none;
+    border-bottom: 4px solid white;
+  }
+  .footer .footerContent .mailingList h1 {
+    text-align: center;
+  }
+  .footer .footerContent .mailingList p {
+    text-align: center;
+  }
+  .footer .footerContent .mailingList .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerContent .footerLogoDiv {
+    justify-content: center;
+    align-items: center;
+    order: 3;
+  }
+  .footer .footerContent .footerLogoDiv img {
+    width: 50%;
+    height: auto;
   }
 }/*# sourceMappingURL=footer.css.map */

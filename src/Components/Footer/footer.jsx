@@ -37,7 +37,7 @@ const Footer = () => {
 
                 <div className='bottomProfile'>
                   <span>Know More</span>
-                  <button><BsArrowRightCircle /></button>
+                  <button className='knowMoreButton'><IoIosArrowRoundForward /></button>
                 </div>
 
             </div>
@@ -65,7 +65,10 @@ const Footer = () => {
                 {isChecked2 && <p className='.checkmark'> I consent to my email being shared with selected partners for offers and promotions.</p>}
               </div>
 
-              <button className='btn'>SUBMIT <IoIosArrowRoundForward className='icon' /></button>
+              <div className="buttonContainer">
+              <button className='submitBtn'>SUBMIT <IoIosArrowRoundForward className='svgIcon' /></button>
+              </div>
+              
               
             </div>
 

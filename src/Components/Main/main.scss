@@ -1,231 +1,472 @@
 .main {
-    margin-top: 80px;
+  margin-top: 6rem;
+  width: 100%;
+  text-align: center;
+
+  .sliderContainer {
     width: 100%;
-    text-align: center;
-    .goals{
-        margin-left: 5%;
-        background: white;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        padding: 20px 0 20px 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        padding: 50px;
-        gap: 4rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
 
-        .goalInfo {
-            background: white;
-            color: black;
-            flex: 1; 
-            padding: 10px;
-            text-align: start;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            .goalText{
-                font-size: 0.9rem;
-            }
-
-            .goalIcons1{
-                padding: 10px;
-                width: 4rem;
-                height: auto;
-                outline: none;
-                border-radius: 13px;
-                background: rgba(255, 169, 169, 1);
-                box-shadow: 4px 4px 3px rgba(255, 15, 15, 0.25);
-            }
-            .goalIcons2{
-                padding: 10px;
-                width: 4rem;
-                height: auto;
-                outline: none;
-                border-radius: 13px;
-                background: rgba(255, 250, 129, 1);
-                box-shadow: 4px 4px 3px rgba(233, 223, 0, 0.6);
-            }
-            .goalIcons3{
-                padding: 10px;
-                width: 4rem;
-                height: auto;
-                outline: none;
-                border-radius: 13px;
-                background: rgba(124, 145, 255, 1);
-                box-shadow: 4px 4px 3px rgba(0, 10, 255, 0.23);
-            }
-            .goalHeading{
-                color: black;
-                background: white;
-                font-weight: 700;
-            }
-            .goalText{
-                color: black;
-                background: white;
-            }
-        }
+    .imageSlider {
+      display: flex;
     }
 
+    .imageItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 15rem;
+      margin-right: 1.5rem;
+      padding: 1rem;
 
-    .mainImage{
+      .card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          height: auto;
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
+        }
+      }
+
+      .cardDetails {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 120px;
+        padding: 1rem;
+        background: black;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
 
-        .mainImageText{
-            font-size: 4rem;
-            font-weight: 700;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .mainImageTextUnderline{
-                width: 80%;
-                height: 0.5rem;
-                border-radius: 1rem;
-                background-color: white;
-                margin-top: 5px;
-            }
+        .label {
+          font-size: 1rem;
+          color: #ffffff;
+          background-color: transparent;
+          margin-bottom: 1rem;
+          text-align: center;
         }
 
-        img{
-            width: 100%;
-            height: auto;
+        .buttonDiv {
+          background: transparent;
+          display: inline-flex;
+          font-weight: 700;
+
+          .button {
+            font-weight: 400;
+            padding: 8px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+          }
+
+          .btnIcon {
+            margin-left: 0.5rem;
+            font-size: 0.7rem;
+            background: transparent;
+            transform: translateY(90%);
+          }
         }
+      }
     }
 
-    .mainContainer{
+    &::-webkit-scrollbar {
+      height: 0.5rem; /* Width of the horizontal scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      margin-left: 50%; /* Offset from the left */
+      margin-right: 50%; /* Offset from the right */
+      background-color: white; /* Background color of the scrollbar track */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(143, 0, 255, 1); /* Scroll thumb color */
+      border-radius: 6px; /* Rounded corners for the scroll thumb */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(143, 0, 255, 0.8); /* Darker color on hover */
+    }
+  }
+
+  .goals {
+    margin-top: 100px;
+    margin-left: 5%;
+    background: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 1rem 0 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    gap: 4rem;
+
+    .goalInfo {
+      background: white;
+      color: black;
+      flex: 1;
+      padding: 0.7rem;
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .goalText {
+        font-size: 0.9rem;
+        text-align: justify;
+      }
+
+      .goalIcons1 {
+        padding: 10px;
+        width: 4rem;
+        height: auto;
+        outline: none;
+        border-radius: 13px;
+        background: rgba(255, 169, 169, 1);
+        box-shadow: 4px 4px 3px rgba(255, 15, 15, 0.25);
+      }
+      .goalIcons2 {
+        padding: 10px;
+        width: 4rem;
+        height: auto;
+        outline: none;
+        border-radius: 13px;
+        background: rgba(255, 250, 129, 1);
+        box-shadow: 4px 4px 3px rgba(233, 223, 0, 0.6);
+      }
+      .goalIcons3 {
+        padding: 10px;
+        width: 4rem;
+        height: auto;
+        outline: none;
+        border-radius: 13px;
+        background: rgba(124, 145, 255, 1);
+        box-shadow: 4px 4px 3px rgba(0, 10, 255, 0.23);
+      }
+      .goalHeading {
+        color: black;
+        background: white;
+        font-weight: 700;
+      }
+      .goalText {
+        color: black;
+        background: white;
+      }
+    }
+  }
+
+  .mainImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+
+    .mainImageText {
+      font-size: 4rem;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .mainImageTextUnderline {
+        width: 80%;
+        height: 0.5rem;
+        border-radius: 1rem;
+        background-color: white;
+        margin-top: 5px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .mainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background-color: rgba(43, 32, 68, 1);
+
+    .explorePossibilities {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      background-color: rgba(43, 32, 68, 1);
+      padding: 3rem;
+      border: 2px solid rgba(43, 32, 68, 1) white;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(240, 229, 229, 0.25);
+
+      .explorePossibilitiesHeading {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+
+      .PossibilitiesSmall {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+
+      .buttonGroup {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        margin-top: 1rem;
+
+        button {
+          padding: 1rem 1rem;
+          background-color: white;
+          color: black;
+          border: 5px solid rgba(124, 145, 255, 1);
+          border-radius: 1rem;
+          cursor: pointer;
+          width: fit-content;
+          font-size: 1rem;
+          box-shadow: 8px 8px 0 rgba(61, 0, 117, 1);
+        }
+
+        .btnGroup-btn:hover {
+          background-color: rgba(61, 0, 117, 1);
+          color: white;
+          border-color: rgba(255, 0, 245, 1);
+        }
+
+        button.selected {
+          background-color: rgba(61, 0, 117, 1);
+          color: white;
+          border-color: rgba(255, 0, 245, 1);
+        }
+      }
+    }
+
+    .imageDisplay {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+        transition: opacity 0.3s ease-in-out;
+        box-shadow: 0 4px 10px rgba(173, 173, 173, 0.25);
+      }
+    }
+  }
+
+  .moreAboutEquitek {
+    margin-top: 170px;
+    background-color: transparent;
+    text-align: left;
+
+    .moreAboutEquitekHeading {
+      width: fit-content;
+
+      span {
+        background-color: transparent;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .moreAboutEquitekHeadingUnderline {
+        width: 100%;
+        height: 0.5rem;
+        border-radius: 1rem;
+        background-color: white;
+        margin-top: 5px;
+      }
+    }
+
+    .cardDiv {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      .card {
+        padding: 80px 40px 80px 40px;
+        flex: 1;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        padding: 70px;
-        background-color: rgba(43, 32, 68, 1);
+        background-image: linear-gradient(
+          to bottom,
+          rgba(100, 0, 186, 1) 0%,
+          rgba(250, 243, 255, 0) 100%
+        );
 
-        .explorePossibilities{
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            justify-content: center;
-            align-items: center;
-            width: fit-content;
-            background-color: rgba(43, 32, 68, 1);
-            padding: 70px;
-            border: 2px solid rgba(43, 32, 68, 1)white;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(240, 229, 229, 0.25);
-
-            .explorePossibilitiesHeading{
-                font-weight: 700;
-                font-size: 2rem;
-            }
-
-            .PossibilitiesSmall{
-                font-weight: 300;
-                font-size: 1.2rem;
-            }
-
-            .buttonGroup{
-                display: flex;
-                flex-direction: row;
-                gap: 2.5rem;
-                margin-top: 10px;
-
-                button {
-                    padding: 1.3rem 1.5rem;
-                    background-color: white;
-                    color: black;
-                    border: 5px solid rgba(124, 145, 255, 1);
-                    border-radius: 10px;
-                    cursor: pointer;
-                    width: fit-content;
-                    font-size: 1rem;
-                    box-shadow: 8px 8px 0 rgba(61, 0, 117, 1);
-                }
-
-                .btnGroup-btn:hover {
-                    background-color:rgba(61, 0, 117, 1); 
-                    color: white;
-                    border-color: rgba(255, 0, 245, 1);
-                }
-                  
-                button.selected {
-                    background-color:rgba(61, 0, 117, 1); 
-                    color: white;
-                    border-color:  rgba(255, 0, 245, 1); 
-                }
-            }
+        img {
+          width: 100%;
+          height: auto;
+          background: transparent;
         }
 
-        .imageDisplay{
-            width: 100%;
-            img{
-            width: 100%;
-            height: auto;
-            margin-top: 80px;
-            transition: opacity 0.3s ease-in-out;
-            box-shadow: 0 4px 10px rgba(173, 173, 173, 0.25);
-            }
+        .subCard{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          background: transparent;
+          .cardTextHeading {
+            font-size: 1.3rem;
+            margin-top: 25px;
+            background: transparent;
+          }
+  
+          .cardTextSmall {
+            font-size: 1rem;
+            background: transparent;
+            font-weight: 300;
+          }
         }
+      }
     }
-
-    .moreAboutEquitek{
-        margin-top: 170px;
-        width: 100%;
-        background-color: transparent;
-        text-align: left;
-        .moreAboutEquitekHeading{
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .cardDiv{
-            margin-top: 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-
-            .card{
-                padding: 80px 40px 80px 40px ;
-                flex: 1;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                background-image: linear-gradient(
-                    to bottom,
-                    rgba(100, 0, 186, 1) 0%, 
-                    rgba(250, 243, 255, 0) 100% 
-                );
-                //max-width: 300px;
-
-
-                .cardTextHeading{
-                    margin-top: 25px;
-                    background: transparent;
-                }
-
-                .cardTextSmall{
-                    background: transparent;
-                    font-weight: 300;
-                }
-                img{
-                    width: 100%;
-                    height: auto;
-                    background: transparent;
-                }
-            }
-        }
-    }
-
+  }
 }
 
+//media qurie mobile
+@media screen and (max-width: 768px) {
+  .main {
+    .goals {
+      margin-left: 0%;
+      margin-right: 0%;
+      flex-direction: column;
+    }
 
+    .sliderContainer {
+      .imageSlider {
+        .imageItem {
+          width: 14rem;
+          .cardDetails {
+            .buttonDiv {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .mainContainer {
+      .explorePossibilities {
+        padding: 2rem;
+
+        .explorePossibilitiesHeading {
+          font-weight: 500;
+          font-size: 2rem;
+        }
+
+        .PossibilitiesSmall {
+          letter-spacing: 1px;
+          font-weight: 300;
+          font-size: 1rem;
+        }
+
+        .buttonGroup {
+          gap: 1.5rem;
+
+          button{
+            padding: 0.2rem 0.7rem;
+            font-size: 0.8rem;
+            border-radius: 0.5rem;
+            box-shadow: 4px 4px 0 rgba(61, 0, 117, 1);
+          }
+        }
+      }
+    }
+
+    .moreAboutEquitek {
+      margin-top: 170px;
+      text-align: left;
+  
+      .moreAboutEquitekHeading {
+        width: fit-content;
+  
+        span {
+          background-color: transparent;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+  
+        .moreAboutEquitekHeadingUnderline {
+          width: 100%;
+          height: 0.5rem;
+          margin-top: 5px;
+        }
+      }
+  
+      .cardDiv {
+        margin-top: 3.5rem;
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          padding: 1rem 1rem 2rem 1rem;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          background-image: linear-gradient(
+            to left,
+            rgba(100, 0, 186, 1) 0%,
+            rgba(250, 243, 255, 0) 100%
+          );
+
+          img {
+            order: 2;
+            width: 40%;
+            height: 40%;
+            background: transparent;
+          }
+
+          .subCard{
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            gap: 2rem;
+            
+            .cardTextHeading {
+              margin-top: 25px;
+              font-weight: 500;
+              font-size: 1.3rem;
+              background: transparent;
+            }
+    
+            .cardTextSmall {
+              background: transparent;
+              font-size: 0.9rem;
+              font-weight: 300;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
