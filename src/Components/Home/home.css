@@ -57,4 +57,7 @@
   .HomeContainer .homeContent .mobiileKnowMoreButton img {
     transform: translateX(50%);
   }
+  .HomeContainer .homeContent .homeImage-div .homeImage img {
+    width: 80%;
+  }
 }/*# sourceMappingURL=home.css.map */

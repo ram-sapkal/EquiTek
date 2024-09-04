@@ -31,6 +31,7 @@
 
         .homeImage-div{
             margin-top: 4rem;
+            
         }
     }
 }
@@ -63,6 +64,14 @@
 
                 img{
                     transform: translateX(50%);
+                }
+            }
+
+            .homeImage-div{
+                .homeImage{
+                    img{
+                        width: 80%;
+                    }
                 }
             }
         }
