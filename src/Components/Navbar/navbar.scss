@@ -148,14 +148,14 @@
     width: 100%;
     height: max-content;
     position: fixed;
+    z-index: 1000;
 
     .header{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-left: 1.5rem;
+        margin-right: 3rem;
 
         .logoDiv{
             align-self: start;
@@ -203,5 +203,37 @@
             display: none;
         }
 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navBarSection{
+        .header{
+            .navLists{
+                display: none;
+            }
+
+            .logoDiv{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                a{
+                    align-self: start;
+                }
+
+                .toggleNavbar{
+                    display: block;
+                    align-self: flex-end;
+
+                    svg{
+                        font-size: 2rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }

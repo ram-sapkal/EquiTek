@@ -31,6 +31,9 @@ export const Navbar = () => {
                 <a href="#" className='logo flex' >
                     <h1><img src={logoColorEquiTek} alt="logo" className='icon'/> EquiTek</h1>
                 </a>
+                <div onClick={showNav} className="toggleNavbar">
+                   <IoReorderThreeSharp className="icon" />
+                </div>
             </div>
 
             <div className={active}>
@@ -51,10 +54,6 @@ export const Navbar = () => {
                        <IoIosCloseCircle className="icon"/>
                     </div>
                 </ul>
-            </div>
-
-            <div onClick={showNav} className="toggleNavbar">
-                <IoReorderThreeSharp className="icon" />
             </div>
 
         </header>

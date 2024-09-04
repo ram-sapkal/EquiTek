@@ -197,7 +197,7 @@ function Main() {
                       blend of technology and creativity in crafting immersive
                       virtual worlds.
                     </p>
-                  </div>
+                  </div> 
                 </div>
                 <div className="card">
                   <img src={techInnovations} alt="tech Innovations" />

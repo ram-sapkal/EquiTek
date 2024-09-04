@@ -189,6 +189,7 @@
     align-items: center;
     order: 2;
     border-bottom: 4px solid white;
+    margin-bottom: 10px;
   }
   .footer .footerContent .profileinformation .profileText {
     text-align: center;
@@ -198,6 +199,7 @@
     order: 1;
     border: none;
     border-bottom: 4px solid white;
+    margin-bottom: 10px;
   }
   .footer .footerContent .mailingList h1 {
     text-align: center;

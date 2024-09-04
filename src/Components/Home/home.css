@@ -1,24 +1,60 @@
-.home {
+.HomeContainer {
+  padding-top: 200px;
   width: 100%;
-  position: relative;
-  margin: auto;
-  padding: 1rem 10rem;
 }
-.home .HomeContainer {
+.HomeContainer .homeContent {
+  margin: 0 7rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.home .HomeContainer .text-div {
+.HomeContainer .homeContent .mobiileKnowMoreButton {
+  display: none;
+}
+.HomeContainer .homeContent .text-div {
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: white;
-  flex: 1;
 }
-.home .HomeContainer .homeImage-div {
-  flex: 1;
+.HomeContainer .homeContent .text-div .homeKnowMoreBtn {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
 }
-.home .HomeContainer .homeImage-div .homeImage {
-  transform: translateY(5%);
+.HomeContainer .homeContent .text-div .homeKnowMoreBtn button {
+  margin-right: 10px;
+}
+.HomeContainer .homeContent .homeImage-div {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .HomeContainer {
+    padding-top: 150px;
+  }
+  .HomeContainer .homeContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .HomeContainer .homeContent .text-div {
+    align-items: center;
+    justify-content: center;
+  }
+  .HomeContainer .homeContent .text-div .homeKnowMoreBtn {
+    display: none;
+  }
+  .HomeContainer .homeContent .mobiileKnowMoreButton {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .HomeContainer .homeContent .mobiileKnowMoreButton img {
+    transform: translateX(50%);
+  }
 }/*# sourceMappingURL=home.css.map */

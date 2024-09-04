@@ -3,14 +3,14 @@
   height: -moz-max-content;
   height: max-content;
   position: fixed;
+  z-index: 1000;
 }
 .navBarSection .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 3rem;
 }
 .navBarSection .header .logoDiv {
   align-self: start;
@@ -46,4 +46,28 @@
 }
 .navBarSection .header .toggleNavbar {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navBarSection .header .navLists {
+    display: none;
+  }
+  .navBarSection .header .logoDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navBarSection .header .logoDiv a {
+    align-self: start;
+  }
+  .navBarSection .header .logoDiv .toggleNavbar {
+    display: block;
+    align-self: flex-end;
+  }
+  .navBarSection .header .logoDiv .toggleNavbar svg {
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=navbar.css.map */
