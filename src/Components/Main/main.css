@@ -5,14 +5,10 @@
 }
 .main .sliderContainer {
   width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
   padding: 2rem;
-  display: flex;
-  align-items: center;
 }
-.main .sliderContainer .imageSlider {
-  display: flex;
+.main .sliderContainer .swiper {
+  width: 100%;
 }
 .main .sliderContainer .imageItem {
   display: flex;
@@ -74,20 +70,17 @@
   background: transparent;
   transform: translateY(90%);
 }
-.main .sliderContainer::-webkit-scrollbar {
-  height: 0.5rem; /* Width of the horizontal scrollbar */
+.main .sliderContainer .swiper-scrollbar {
+  height: 0.3rem;
+  background-color: white;
 }
-.main .sliderContainer::-webkit-scrollbar-track {
-  margin-left: 50%; /* Offset from the left */
-  margin-right: 50%; /* Offset from the right */
-  background-color: white; /* Background color of the scrollbar track */
+.main .sliderContainer .swiper-scrollbar-drag {
+  background-color: rgb(65, 0, 114) !important;
+  border-radius: 6px;
+  height: 100%;
 }
-.main .sliderContainer::-webkit-scrollbar-thumb {
-  background-color: rgb(143, 0, 255); /* Scroll thumb color */
-  border-radius: 6px; /* Rounded corners for the scroll thumb */
-}
-.main .sliderContainer::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(143, 0, 255, 0.8); /* Darker color on hover */
+.main .sliderContainer:hover .swiper-scrollbar-drag {
+  background-color: rgb(100, 0, 200);
 }
 .main .goals {
   margin-top: 100px;

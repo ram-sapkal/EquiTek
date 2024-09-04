@@ -3,18 +3,113 @@
   width: 100%;
   text-align: center;
 
+  // .sliderContainer {
+  //   width: 100%;
+  //   overflow-x: auto;
+  //   white-space: nowrap;
+  //   padding: 2rem;
+  //   display: flex;
+  //   align-items: center;
+
+  //   .imageSlider {
+  //     display: flex;
+  //   }
+
+  //   .imageItem {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     width: 15rem;
+  //     margin-right: 1.5rem;
+  //     padding: 1rem;
+
+  //     .card {
+  //       width: 100%;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       img {
+  //         width: 100%;
+  //         height: auto;
+  //         border-top-left-radius: 1rem;
+  //         border-top-right-radius: 1rem;
+  //       }
+  //     }
+
+  //     .cardDetails {
+  //       width: 100%;
+  //       display: flex;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       align-items: center;
+  //       padding: 1rem;
+  //       background: black;
+  //       border-bottom-left-radius: 1rem;
+  //       border-bottom-right-radius: 1rem;
+
+  //       .label {
+  //         font-size: 1rem;
+  //         color: #ffffff;
+  //         background-color: transparent;
+  //         margin-bottom: 1rem;
+  //         text-align: center;
+  //       }
+
+  //       .buttonDiv {
+  //         background: transparent;
+  //         display: inline-flex;
+  //         font-weight: 700;
+
+  //         .button {
+  //           font-weight: 400;
+  //           padding: 8px 0;
+  //           border: none;
+  //           border-radius: 5px;
+  //           background-color: transparent;
+  //           color: #fff;
+  //           cursor: pointer;
+  //           text-align: center;
+  //         }
+
+  //         .btnIcon {
+  //           margin-left: 0.5rem;
+  //           font-size: 0.7rem;
+  //           background: transparent;
+  //           transform: translateY(90%);
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   &::-webkit-scrollbar {
+  //     height: 0.5rem; /* Width of the horizontal scrollbar */
+  //   }
+
+  //   &::-webkit-scrollbar-track {
+  //     margin-left: 50%; /* Offset from the left */
+  //     margin-right: 50%; /* Offset from the right */
+  //     background-color: white; /* Background color of the scrollbar track */
+  //   }
+
+  //   &::-webkit-scrollbar-thumb {
+  //     background-color: rgba(143, 0, 255, 1); /* Scroll thumb color */
+  //     border-radius: 6px; /* Rounded corners for the scroll thumb */
+  //   }
+
+  //   &::-webkit-scrollbar-thumb:hover {
+  //     background-color: rgba(143, 0, 255, 0.8); /* Darker color on hover */
+  //   }
+  // }
+
   .sliderContainer {
     width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
     padding: 2rem;
-    display: flex;
-    align-items: center;
-
-    .imageSlider {
-      display: flex;
+  
+    .swiper {
+      width: 100%;
     }
-
+  
     .imageItem {
       display: flex;
       flex-direction: column;
@@ -23,12 +118,13 @@
       width: 15rem;
       margin-right: 1.5rem;
       padding: 1rem;
-
+  
       .card {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        
         img {
           width: 100%;
           height: auto;
@@ -36,7 +132,7 @@
           border-top-right-radius: 1rem;
         }
       }
-
+  
       .cardDetails {
         width: 100%;
         display: flex;
@@ -47,7 +143,7 @@
         background: black;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
-
+  
         .label {
           font-size: 1rem;
           color: #ffffff;
@@ -55,12 +151,12 @@
           margin-bottom: 1rem;
           text-align: center;
         }
-
+  
         .buttonDiv {
           background: transparent;
           display: inline-flex;
           font-weight: 700;
-
+  
           .button {
             font-weight: 400;
             padding: 8px 0;
@@ -71,7 +167,7 @@
             cursor: pointer;
             text-align: center;
           }
-
+  
           .btnIcon {
             margin-left: 0.5rem;
             font-size: 0.7rem;
@@ -81,28 +177,25 @@
         }
       }
     }
-
-    &::-webkit-scrollbar {
-      height: 0.5rem; /* Width of the horizontal scrollbar */
+  
+    .swiper-scrollbar {
+      height: 0.3rem;
+       background-color: white;
+    }
+  
+    .swiper-scrollbar-drag {
+      background-color: rgb(65, 0, 114) !important;
+      border-radius: 6px;
+      height: 100%;
     }
 
-    &::-webkit-scrollbar-track {
-      margin-left: 50%; /* Offset from the left */
-      margin-right: 50%; /* Offset from the right */
-      background-color: white; /* Background color of the scrollbar track */
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: rgba(143, 0, 255, 1); /* Scroll thumb color */
-      border-radius: 6px; /* Rounded corners for the scroll thumb */
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background-color: rgba(143, 0, 255, 0.8); /* Darker color on hover */
+    &:hover .swiper-scrollbar-drag {
+      background-color: rgba(100, 0, 200, 1); 
     }
   }
+  
 
-  .goals {
+  .goals { 
     margin-top: 100px;
     margin-left: 5%;
     background: white;

@@ -19,6 +19,13 @@ import samsungVr from "../../Assets/samsung-vr.png";
 import hpVr from "../../Assets/hp-vr.png";
 import { IoIosArrowForward } from "react-icons/io";
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
+
+
 function Main() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentImage, setImage] = useState(1);
@@ -100,7 +107,7 @@ function Main() {
           </div>
         </div>
 
-        <div className="sliderContainer">
+        {/* <div className="sliderContainer">
           <div className="imageSlider">
             {Data.map(({ imgSrc, id, name }) => (
               <div key={id} className="imageItem">
@@ -117,6 +124,43 @@ function Main() {
               </div>
             ))}
           </div>
+        </div> */}
+
+        <div className="sliderContainer">
+          <Swiper    
+            spaceBetween={15}
+            slidesPerView={4}
+            scrollbar={{ 
+              draggable: true 
+            }}
+            breakpoints={{
+              1024: {
+                slidesPerView: 4,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              0: {
+                slidesPerView: 1,
+              },
+            }}
+            className="imageSlider"
+          >
+            {Data.map(({ imgSrc, id, name }) => (
+              <SwiperSlide key={id} className="imageItem">
+                <div className="card">
+                  <img src={imgSrc} alt={`Slide ${id + 1}`} />
+                </div>
+                <div className="cardDetails">
+                  <div className="label">{name}</div>
+                  <div className="buttonDiv">
+                    <button className="button">Click Me</button>
+                    <IoIosArrowForward className="btnIcon" />
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
 
         <div className="mainImage">
@@ -197,7 +241,7 @@ function Main() {
                       blend of technology and creativity in crafting immersive
                       virtual worlds.
                     </p>
-                  </div> 
+                  </div>
                 </div>
                 <div className="card">
                   <img src={techInnovations} alt="tech Innovations" />
