@@ -10,6 +10,11 @@
     background-size: auto;
     color: white;
 }
+.error {
+    background: transparent;
+    color: red;
+    font-size: 0.875rem;
+}
 
 .btn{
     padding: .6rem 1.5rem;

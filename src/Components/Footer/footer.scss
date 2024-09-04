@@ -121,6 +121,44 @@
             gap: 1rem;
             background: transparent;
 
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                background: transparent;
+
+                .emailInputContainer{
+                    width: 100%;
+                    padding: .5rem .6rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid white;
+                    outline: none;
+                    background: white;
+                    color: black;
+    
+                    &::placeholder{
+                        color:rgba(161, 161, 161, 1);
+                        opacity: .5;
+                    }
+                }
+    
+                .checkBoxDiv{
+                    background: transparent;
+                    .checkBoxLabel{
+                        font-weight: 200;
+                        background: transparent;
+                        .checkBox{
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .checkmark{
+                        font-size: 0.8rem;
+                    }
+    
+                }
+            }
+
             h1{
                 background: transparent;
             }
@@ -128,32 +166,6 @@
             p{
                 font-weight: 100;
                 background: transparent;
-            }
-
-            .emailInputContainer{
-                width: 100%;
-                padding: .5rem .6rem;
-                border-radius: 0.5rem;
-                border: 1px solid white;
-                outline: none;
-                background: white;
-                color: black;
-
-                &::placeholder{
-                    color:rgba(161, 161, 161, 1);
-                    opacity: .5;
-                }
-            }
-
-            .checkBoxDiv{
-                background: transparent;
-                .checkBoxLabel{
-                    background: transparent;
-                    .checkBox{
-                        margin-right: 10px;
-                    }
-                }
-
             }
             
             .buttonContainer{
@@ -225,6 +237,13 @@
                 border: none;
                 border-bottom: 4px solid white;
                 margin-bottom: 10px;
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    background: transparent;
+                }
 
                 h1{
                     text-align: center;

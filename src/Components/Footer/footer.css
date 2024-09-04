@@ -105,14 +105,13 @@
   gap: 1rem;
   background: transparent;
 }
-.footer .footerContent .mailingList h1 {
+.footer .footerContent .mailingList form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background: transparent;
 }
-.footer .footerContent .mailingList p {
-  font-weight: 100;
-  background: transparent;
-}
-.footer .footerContent .mailingList .emailInputContainer {
+.footer .footerContent .mailingList form .emailInputContainer {
   width: 100%;
   padding: 0.5rem 0.6rem;
   border-radius: 0.5rem;
@@ -121,22 +120,33 @@
   background: white;
   color: black;
 }
-.footer .footerContent .mailingList .emailInputContainer::-moz-placeholder {
+.footer .footerContent .mailingList form .emailInputContainer::-moz-placeholder {
   color: rgb(161, 161, 161);
   opacity: 0.5;
 }
-.footer .footerContent .mailingList .emailInputContainer::placeholder {
+.footer .footerContent .mailingList form .emailInputContainer::placeholder {
   color: rgb(161, 161, 161);
   opacity: 0.5;
 }
-.footer .footerContent .mailingList .checkBoxDiv {
+.footer .footerContent .mailingList form .checkBoxDiv {
   background: transparent;
 }
-.footer .footerContent .mailingList .checkBoxDiv .checkBoxLabel {
+.footer .footerContent .mailingList form .checkBoxDiv .checkBoxLabel {
+  font-weight: 200;
   background: transparent;
 }
-.footer .footerContent .mailingList .checkBoxDiv .checkBoxLabel .checkBox {
+.footer .footerContent .mailingList form .checkBoxDiv .checkBoxLabel .checkBox {
   margin-right: 10px;
+}
+.footer .footerContent .mailingList form .checkBoxDiv .checkmark {
+  font-size: 0.8rem;
+}
+.footer .footerContent .mailingList h1 {
+  background: transparent;
+}
+.footer .footerContent .mailingList p {
+  font-weight: 100;
+  background: transparent;
 }
 .footer .footerContent .mailingList .buttonContainer {
   background: transparent;
@@ -200,6 +210,12 @@
     border: none;
     border-bottom: 4px solid white;
     margin-bottom: 10px;
+  }
+  .footer .footerContent .mailingList form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: transparent;
   }
   .footer .footerContent .mailingList h1 {
     text-align: center;
