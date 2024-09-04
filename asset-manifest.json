@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EquiTek/static/css/main.45bedad7.css",
-    "main.js": "/EquiTek/static/js/main.2b3bc86a.js",
+    "main.css": "/EquiTek/static/css/main.e4cc8162.css",
+    "main.js": "/EquiTek/static/js/main.7abe37ec.js",
     "static/js/453.2ab03be8.chunk.js": "/EquiTek/static/js/453.2ab03be8.chunk.js",
     "static/media/sci-fi.png": "/EquiTek/static/media/sci-fi.27f9d1a46bc4f76ba959.png",
     "static/media/nature.png": "/EquiTek/static/media/nature.be2a5dbf4bb64fbbe811.png",
@@ -22,12 +22,12 @@
     "static/media/hp-vr.png": "/EquiTek/static/media/hp-vr.70b99357ce324e7df15a.png",
     "static/media/logo-white-equitek.png": "/EquiTek/static/media/logo-white-equitek.4a9deacda0e1aea1d49a.png",
     "index.html": "/EquiTek/index.html",
-    "main.45bedad7.css.map": "/EquiTek/static/css/main.45bedad7.css.map",
-    "main.2b3bc86a.js.map": "/EquiTek/static/js/main.2b3bc86a.js.map",
+    "main.e4cc8162.css.map": "/EquiTek/static/css/main.e4cc8162.css.map",
+    "main.7abe37ec.js.map": "/EquiTek/static/js/main.7abe37ec.js.map",
     "453.2ab03be8.chunk.js.map": "/EquiTek/static/js/453.2ab03be8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45bedad7.css",
-    "static/js/main.2b3bc86a.js"
+    "static/css/main.e4cc8162.css",
+    "static/js/main.7abe37ec.js"
   ]
 }
